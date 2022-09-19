@@ -1,3 +1,13 @@
-- name: Hello
-  debug:
-    msg: hello world
+- name: templates
+  template:
+    src: pipeline.xml
+    dest: /tmp/pipeline.xml
+  loop:
+    - {repoName: "cart" , componentName: "cart"}
+- name: Create a jenkins pipeline job using the token
+  community.general.jenkins_job:
+    config: "{{ lookup('template', '/tmp/pipeline.xml') }}"
+    name: "test"
+    token: "11f9137d50854c469c012e4bf6ab8fc97b"
+    url: "http://jenkins-p.devopslearner.online:8080"
+    user: "admin"
