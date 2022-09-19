@@ -5,8 +5,8 @@
     token: "11f9137d50854c469c012e4bf6ab8fc97b"
     url: "http://jenkins-p.devopslearner.online:8080"
     user: "admin"
-  loop:
-    - { name: "CI-Pipeline" , description: "CI Pipeline for roboshop components }
+  loop: "{{folders}}"
+
      
 - name: Create a jenkins pipeline job using the token
   community.general.jenkins_job:
@@ -15,5 +15,5 @@
     token: "11f9137d50854c469c012e4bf6ab8fc97b"
     url: "http://jenkins-p.devopslearner.online:8080"
     user: "admin"
-  loop:
-    - {jobName: "cart" , folderName: "CI-Pipeline/" , repoName: "cart" , componentName: "cart"}
+  loop: "{{pipelineJob}}"
+    

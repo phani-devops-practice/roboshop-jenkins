@@ -1,0 +1,5 @@
+folders:
+  - { name: "CI-Pipeline" , description: "CI Pipeline for roboshop components }
+
+pipelineJob:
+  - {jobName: "cart" , folderName: "CI-Pipeline/" , repoName: "cart" , componentName: "cart"}
