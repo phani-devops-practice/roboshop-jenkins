@@ -11,4 +11,4 @@ multilineJob:
   - {jobName: "frontend" , folderName: "CI-Pipeline/" , repoName: "frontend" , componentName: "frontend"}
 
 pipelineJob:
-  - {jobName: "deploy-to-any-env" , folderName: "" , repoName: "roboshop-jenkins" , fileName: "Jenkinsfile-any-env-deploy"}
+  - {jobName: "deploy-to-any-env" , folderName: "" , repoName: "roboshop-jenkins" , fileName: "Jenkinsfile-any-env-deploy.groovy"}
