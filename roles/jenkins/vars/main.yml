@@ -7,7 +7,6 @@ multilineJob:
   - {jobName: "catalogue" , folderName: "CI-Pipeline/" , repoName: "catalogue" , componentName: "catalogue"}
   - {jobName: "shipping" , folderName: "CI-Pipeline/" , repoName: "shipping" , componentName: "shipping"}
   - {jobName: "payment" , folderName: "CI-Pipeline/" , repoName: "payment" , componentName: "payment"}
-  - {jobName: "dispatch" , folderName: "CI-Pipeline/" , repoName: "dispatch" , componentName: "dispatch"}
   - {jobName: "frontend" , folderName: "CI-Pipeline/" , repoName: "frontend" , componentName: "frontend"}
 
 pipelineJob:
